@@ -12,5 +12,5 @@ storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo(
 
 storiesOf('Button', module)
   .add('default', () => (
-    <Button content="Test"></Button>
+    <Button>Default Button</Button>
   ));
