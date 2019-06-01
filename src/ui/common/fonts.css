@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
+@import '../../assets/icons/css/micons.css';
 
 html, body {
 	font-family: 'Heebo';

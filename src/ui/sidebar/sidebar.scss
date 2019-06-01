@@ -1,0 +1,62 @@
+@import '../common/fonts.css';
+
+div.rh-sidebar {
+	height: 100vh;
+	width: 80px;
+
+	background-color: #d31a1a;
+	box-shadow: 6px 0 12px #00000030;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+
+	.rh-sidebar-top {
+		background-color: #fff;
+		height: 80px;
+	}
+
+	div.rh-sidebar-action-item {
+		cursor: pointer;
+
+		height: 80px;
+
+		display: flex;
+    align-items: center;
+		justify-content: center;
+
+		transition: all 0.2s;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.15);
+		}
+
+		i.rh-icon {
+			color: #9c0a0a;
+			font-size: 2em;
+		}
+
+		span.border {
+			background-color: #fff;
+			width: 4px;
+			height: 45px;
+			position: absolute;
+			left: 8px;
+
+			opacity: 0;
+
+			border-radius: 0px 4px 4px 0px;
+		}
+
+		&.active {
+			i.rh-icon {
+				color: #fff;
+			}
+
+			span.border {
+				opacity: 1;
+			}
+		}
+	}
+}

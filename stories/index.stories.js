@@ -6,7 +6,7 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Welcome } from '@storybook/react/demo';
 
-import { Button, Widget } from '../src/ui'
+import { Button, Widget, Sidebar, SidebarItem } from '../src/ui'
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -20,4 +20,19 @@ storiesOf('Widget', module)
     <Widget title="Widget">
       Why, hello there
     </Widget>
+  ));
+
+storiesOf('Sidebar', module)
+  .add('default', () => (
+    <Sidebar>
+      <SidebarItem>
+
+      </SidebarItem>
+      <SidebarItem isActive={true}>
+
+      </SidebarItem>
+      <SidebarItem>
+
+      </SidebarItem>
+    </Sidebar>
   ));
