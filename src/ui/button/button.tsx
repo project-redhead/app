@@ -1,9 +1,13 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
 import './button.css';
 
-export const Button = (props: { content: string }) => (
+export interface ButtonProps {
+
+}
+
+export const Button: FunctionComponent<ButtonProps> = ({children}) => (
 	<a className="rh-button">
-		{props.content}
+		{children}
 	</a>
 );
